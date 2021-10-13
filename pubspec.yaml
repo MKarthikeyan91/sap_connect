@@ -1,12 +1,12 @@
 name: sap_connect
 description: provides connection to the SAP server, making requests to the SAP server, receiving and processing data from the SAP server in response to requests
 version: 0.1.0
-author: Dmitriy Kiyanov <dmkiyanov@gmail.com>
+#author: Dmitriy Kiyanov <dmkiyanov@gmail.com>
 homepage: https://github.com/DKiyanov/sap_connect
 repository: https://github.com/DKiyanov/sap_connect
 
 environment:
-  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -15,21 +15,25 @@ dependencies:
     sdk: flutter
 
   async: ^2.3.0
-  crypto: ^2.0.6
+  crypto: ^3.0.0
   cookie_jar: ^1.0.0
   shared_preferences: ^0.4.2
   fluttertoast: ^2.1.2
   device_id: ^0.1.3
-  intl: ^0.15.7
+  intl: ^0.17.0
   open_file: ^1.2.3+1
   path_provider: ^0.5.0+1
   package_info: ^0.4.0+1
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  mockito: ^4.0.0
+  test_api: ^0.4.2
+  mockito: ^5.0.0
+  analyzer: ^2.1.0
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
