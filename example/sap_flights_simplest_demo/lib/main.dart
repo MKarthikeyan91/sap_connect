@@ -14,11 +14,11 @@ bool kFakeSapServer = true;
 
 void main() {
   Route _getRoute(RouteSettings settings) {
-    switch (settings.name){
-      case '/flights' :
-        return MaterialPageRoute( builder: (context) => FlightsPage() );
-      default :
-        return null;
+    switch (settings.name) {
+      case '/flights':
+        return MaterialPageRoute(builder: (context) => FlightsPage());
+      default:
+        return MaterialPageRoute(builder: (context) => FlightsPage());
     }
   }
 
@@ -35,7 +35,5 @@ void main() {
     kFakeHandler = fakeSapServer;
   }
 
-  runApp( SapApplication(sapApplicationParams, sapStartParams) );
+  runApp(SapApplication(sapApplicationParams, sapStartParams));
 }
-
-
